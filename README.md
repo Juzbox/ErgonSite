@@ -1,2 +1,2 @@
-# Small Talk, Big Questions
-smalltalkbigquestions.today/
+# Site
+https://juzbox.github.io/TrialTestCoC/

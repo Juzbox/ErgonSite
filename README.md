@@ -1,2 +1,2 @@
 # Site
-https://juzbox.github.io/TrialTestCoC/
+https://juzbox.github.io/ErgonSite/

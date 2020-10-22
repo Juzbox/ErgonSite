@@ -56,7 +56,9 @@ src: url("Inter-Thin.ttf") format("truetype");
 		
 	.intro-grid .para {
 		margin-bottom: 100px;
-	}
+        
+    
+    }
 	
 	.map {
 		margin: 100px 0;
@@ -116,8 +118,8 @@ src: url("Inter-Thin.ttf") format("truetype");
 	
 	.intro .intro-grid {
 		grid-template-columns: repeat(2, 1fr);
-		grid-column-gap: 3%;
-		grid-row-gap: 10%;
+		grid-column-gap: 10%;
+		grid-row-gap: 30%;
 	}
 	
 	.map {
@@ -189,6 +191,11 @@ html, body {
 	overflow: hidden;
 }
 
+.header-logo {
+    margin: 15px;
+  float: left;
+}
+
 
 .header-description h2 {
 	color: white;
@@ -237,6 +244,13 @@ html, body {
 
 .para p {
 	font: var(--body);
+    font-size: 10pt;
+}
+
+.para pp {
+	font: var(--body);
+    font-size: 10pt;
+    margin-right: 100px;
 }
 
 .para p span {
@@ -244,13 +258,17 @@ html, body {
 }
 
 .slide-image {
-	width: auto;
-    overflow: hidden;
+margin-left: 200px;
 	grid-column-start: 2;
-	grid-column-end: 5;
+	grid-column-end: 3;
+    float: right;
 }
 
-
+.image-center {
+    margin: 30px;
+    
+    
+}
 
 .caption {
 	font: var(--caption);
@@ -263,7 +281,7 @@ html, body {
 }
 
 .intro .slide-image {
-	width: 100%;
+	width: 130%;
 }
 
 .para a {
@@ -290,7 +308,7 @@ html, body {
 .map-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-column-gap: 3%;
+	grid-column-gap: 6%;
 	height: 100%;
 }
 
@@ -386,7 +404,7 @@ html, body {
 
 /*EXHIBTION*/
 .exhibition {
-	margin: 100px 0;
+	margin: 200px 0;
 	width: var(--w);
 	margin-left: auto;
 	margin-right: auto;

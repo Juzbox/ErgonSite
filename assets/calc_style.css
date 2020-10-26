@@ -168,10 +168,9 @@ html, body {
     width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-    margin-bottom: 10vh;
-	height: 100vh;
+
 	overflow: hidden;
-    color: white;
+    color: black;
 }
 
 .bodycopy {
@@ -188,7 +187,7 @@ html, body {
 .header-description {
     position: fixed;
 	width: 100%;
-	overflow: hidden;
+
 }
 
 .header-logo {
@@ -198,7 +197,6 @@ html, body {
 
 
 .header-description h2 {
-	color: white;
     font-family: InterReg;
 	font-size: 18px;
     
@@ -461,7 +459,9 @@ margin-left: 200px;
 
 
 
-/*P5.js*/
 canvas {
   display: block;
 }
+
+
+

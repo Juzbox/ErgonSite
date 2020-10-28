@@ -375,8 +375,8 @@ margin-left: 200px;
 /*PROJECT SECTION*/
 
 .project-section {
-	margin: 200px 0;
-	width: var(--w);
+	margin: 120px 0;
+	
 	margin-left: auto;
 	margin-right: auto;
 }

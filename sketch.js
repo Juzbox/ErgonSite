@@ -48,8 +48,8 @@ let sliderH1, sliderH2, sliderH3, sliderH4, sliderH5;
 
 function setup() {
     leftMargin = 100;
-    scoreMargin = 620;
-    sliderX = 460;
+    scoreMargin = 580;
+    sliderX = 480;
     sliderYgap = 30;
     sliderSize = 200;
     textSize(15);
@@ -142,7 +142,36 @@ function draw() {
     mapW = map(valWe, 1, 8, 3, 1);
 
 
+       if (mapP === 1) {
+        image(imgP1, leftMargin, 0, 600, imgH);
+    }
 
+    if ((mapP > 1) && (mapP < 3)) {
+        image(imgP2, leftMargin, 0, 600, imgH);
+    }
+
+    if (mapP === 3) {
+        image(imgP3, leftMargin, 0, 600, imgH);
+    }
+    
+
+    
+
+    if (mapW === 1) {
+        image(imgW1, leftMargin, 0, 600, imgH);
+    }
+
+    if ((mapW > 1) && (mapW < 3)) {
+        image(imgW2, leftMargin, 0, 600, imgH);
+    }
+
+    if (mapW === 3) {
+        image(imgW3, leftMargin, 0, 600, imgH);
+    }
+
+    
+    
+    
     if (mapH === 1) {
         image(imgH1, leftMargin, 0, 600, imgH);
     }
@@ -156,6 +185,7 @@ function draw() {
     }
 
 
+    
 
     if (mapL === 1) {
         image(imgL1, leftMargin, 0, 600, imgH);
@@ -170,32 +200,9 @@ function draw() {
     }
 
 
-    if (mapP === 1) {
-        image(imgP1, leftMargin, 0, 600, imgH);
-    }
-
-    if ((mapP > 1) && (mapP < 3)) {
-        image(imgP2, leftMargin, 0, 600, imgH);
-    }
-
-    if (mapP === 3) {
-        image(imgP3, leftMargin, 0, 600, imgH);
-    }
+ 
 
 
-
-
-    if (mapW === 1) {
-        image(imgW1, leftMargin, 0, 600, imgH);
-    }
-
-    if ((mapW > 1) && (mapW < 3)) {
-        image(imgW2, leftMargin, 0, 600, imgH);
-    }
-
-    if (mapW === 3) {
-        image(imgW3, leftMargin, 0, 600, imgH);
-    }
 
 
 

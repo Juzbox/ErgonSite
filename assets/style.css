@@ -48,6 +48,7 @@ src: url("Inter-Thin.ttf") format("truetype");
 	}
 	.intro {
 		margin: 0px 0 100px;
+        margin-bottom: 100px;
 	}
 	
 	.intro .intro-grid {
@@ -89,6 +90,7 @@ src: url("Inter-Thin.ttf") format("truetype");
 	}
 	.project .para {
 		margin-bottom: 50px;
+        margin-top: 150px;
 	}
 	.exhibition .exhibition-grid {
 		display: block;
@@ -243,6 +245,7 @@ html, body {
 }
 
 .para p {
+    margin-top: 0px;
 	font: var(--body);
     font-size: 10pt;
 }
@@ -385,7 +388,7 @@ margin-left: 200px;
 
 
 .project-section h2 {
-	margin-top: 0px;
+	margin-top: 100px;
 	font: var(--bodysp);
 }
 

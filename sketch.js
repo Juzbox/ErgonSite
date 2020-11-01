@@ -27,6 +27,7 @@ let leftMargin;
 let UIgap;
 let UIstartY;
 let scoreMargin;
+let captionAdjust;
 
 let imgH;
 let tempH;
@@ -47,18 +48,24 @@ let sliderH1, sliderH2, sliderH3, sliderH4, sliderH5;
 
 
 function setup() {
+    
+    
+   var canvas = createCanvas(800, 600);
+    canvas.parent('calc');
+
     leftMargin = 100;
     scoreMargin = 580;
-    sliderX = 480;
+    sliderX = 1070;
     sliderYgap = 30;
     sliderSize = 200;
     textSize(15);
     tempH = innerHeight - 300;
     imgH = 300;
     sliderY = -65;
-
+captionAdjust=585;
+    
     UIgap = 350;
-    UIstartY = 460;
+    UIstartY = innerHeight*4+340;
 
     sliderH1 = UIgap;
     sliderH2 = UIgap + sliderYgap;
@@ -66,6 +73,7 @@ function setup() {
     sliderH4 = UIgap + sliderYgap * 3;
     sliderH5 = UIgap + sliderYgap * 4;
 
+    
 
     imgBASE = loadImage('assets/exports1/baseImg.png');
 
@@ -89,11 +97,9 @@ function setup() {
 
 
 
-    createCanvas(innerWidth, innerHeight - 200);
-
 
     sliderLeaves = createSlider(1, 8, 1);
-    sliderLeaves.position(sliderX, UIstartY+ sliderYgap * 2 + sliderY);
+    sliderLeaves.position(sliderX, UIstartY+sliderYgap * 2 + sliderY);
     sliderLeaves.style('width', sliderSize);
 
     sliderWeeds = createSlider(1, 8, 1);
@@ -272,25 +278,25 @@ function draw() {
 
 
     //MINS
-    text("1", sliderX - 25, sliderH1);
-    text("1", sliderX - 25, sliderH2);
-    text("1", sliderX - 25, sliderH3);
-    text("1", sliderX - 25, sliderH4);
-    text("10eu", sliderX - 35, sliderH5);
+    text("1", sliderX-captionAdjust - 25, sliderH1);
+    text("1", sliderX-captionAdjust - 25, sliderH2);
+    text("1", sliderX-captionAdjust - 25, sliderH3);
+    text("1", sliderX-captionAdjust - 25, sliderH4);
+    text("10eu", sliderX-captionAdjust - 35, sliderH5);
 
 
 
     //MAXS
-    text("8", sliderX + sliderSize * 0.8, sliderH1);
-    text("8", sliderX + sliderSize * 0.8, sliderH2);
-    text("8", sliderX + sliderSize * 0.8, sliderH3);
-    text("8", sliderX + sliderSize * 0.8, sliderH4);
-    text("20eu", sliderX + sliderSize * 0.8, sliderH5);
+    text("8", sliderX-captionAdjust + sliderSize * 0.8, sliderH1);
+    text("8", sliderX-captionAdjust + sliderSize * 0.8, sliderH2);
+    text("8", sliderX-captionAdjust + sliderSize * 0.8, sliderH3);
+    text("8", sliderX-captionAdjust + sliderSize * 0.8, sliderH4);
+    text("20eu", sliderX-captionAdjust + sliderSize * 0.8, sliderH5);
 
     //VALS
-    text(valL, sliderX + sliderSize, sliderH1);
-    text(valWe, sliderX + sliderSize, sliderH2);
-    text(valP, sliderX + sliderSize, sliderH3);
-    text(valH, sliderX + sliderSize, sliderH4);
-    text(valWa, sliderX + sliderSize, sliderH5);
+    text(valL, sliderX-captionAdjust + sliderSize, sliderH1);
+    text(valWe, sliderX-captionAdjust + sliderSize, sliderH2);
+    text(valP, sliderX-captionAdjust + sliderSize, sliderH3);
+    text(valH, sliderX-captionAdjust + sliderSize, sliderH4);
+    text(valWa, sliderX-captionAdjust + sliderSize, sliderH5);
 }

@@ -10,6 +10,7 @@ let valP;
 let valWe;
 let valH;
 let valMo;
+let valTime;
 
 let totalCost;
 let totalEffort;
@@ -147,6 +148,7 @@ function draw() {
 
     totalEffort = valL + valH + valWe + valP;
     totalCost = truncateDecimals(valMo,2);
+    valTime=int(map(totalEffort,4,36,2,5));
 
     image(imgBASE, leftMargin, 0, 600, imgH);
 
@@ -285,11 +287,12 @@ fill(255);
 fill(128,128,255);
 
     //slider labels
-    textSize(16);
-    text("Having Ergon gardeners pick leaves up " + valL + " times a month, weed " + valWe + " times a month, prune trees " + valP + " times a month, and trim hedges " + valH + " times a month for an hourly wage of " + valWa + "€/hr (which on average would add " + totalCost + "€ to your city taxes) would result in a "+ plantLife2+" plant life. The Kwaliteitscatalogus grade equivalent for this situation would be a "+ kalitat+".", leftMargin, sliderH1-10, 350, 2000);
+    textSize(14);
+    text("Having Ergon gardeners pick leaves up " + valL + " times a month, weed " + valWe + " times a month, prune trees " + valP + " times a month, and trim hedges " + valH + " times a month would result in a "+ plantLife2+" plant life. It's also worth noting it would take about "+valTime+" hours of work per week. With an hourly wage of " + valWa + "€/hr this would amount to " + totalCost + "€ added to your city taxes. For the sake of comparison, the Kwaliteitscatalogus grade equivalent for this situation would be a "+ kalitat+".", leftMargin, sliderH1-10, 370, 2000);
 
 fill(128,128,255);
     //MINS
+    textSize(16);
     text("RAKING", sliderX - captionAdjust + 90, sliderH1+5);
     text("WEEDING", sliderX - captionAdjust + 90, sliderH2+5);
     text("PRUNING", sliderX - captionAdjust + 90, sliderH3+5);

@@ -462,6 +462,58 @@ margin-left: 200px;
 }
 
 
+text {
+    color: black;
+    font-family: 'Caladea';
+    font-size: 12px;
+    line-height: 16px;
+    padding-right: 0px;
+    background: white;
+}
+
+
+a.text{
+    color: black;
+    font-family: 'Caladea';
+    font-size: 12px;
+    line-height: 16px;
+    padding-right: 0px;
+    background: white;
+
+    
+}
+a:visited {
+    color: black;
+}
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: white;
+    background: black;
+}
+
+.botCenter {
+    position: fixed;
+    text-align: center;
+    bottom: 3vh;
+    transform: translate(-50%);
+    left: 50%;
+    width: 400px;
+
+}
+
+.Center {
+    position: relative;
+    margin-top: 10vh;
+    text-align: center;
+    bottom: 3vh;
+    transform: translate(-50%);
+    left: 50%;
+    width: 400px;
+
+}
 
 
 /*P5.js*/

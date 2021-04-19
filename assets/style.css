@@ -37,11 +37,9 @@ src: url("Inter-Thin.ttf") format("truetype");
 @media only screen and (max-width: 1024px) {
 	:root {
 		--w: 95%;
-	}	
+	}
+	
 	.header .bodycopy {
-        	top: 15%;     
-        width: 100%;
-        	height: 60vh;
 		font: 28px/40px InterMed;
 	}
 	
@@ -52,20 +50,14 @@ src: url("Inter-Thin.ttf") format("truetype");
 		margin: 0px 0 100px;
         margin-bottom: 100px;
 	}
-    
-    .introMain {
-		margin: 0px 0 0px;
-        margin-bottom: 100px;
-	}
 	
 	.intro .intro-grid {
 		display: block;
-     
 	}
 		
 	.intro-grid .para {
 		margin-bottom: 100px;
-   
+        
     
     }
 	
@@ -125,16 +117,11 @@ src: url("Inter-Thin.ttf") format("truetype");
 	.intro {
 		margin: 0px 0 100px;
 	}
-    
-    	.introMain {
-		margin: 0px 0 100px;
-	}
 	
 	.intro .intro-grid {
-/*		grid-template-columns: repeat(2, 1fr);*/
-        grid-template-columns: auto auto auto;
+		grid-template-columns: repeat(2, 1fr);
 		grid-column-gap: 10%;
-		grid-row-gap: 10%;
+		grid-row-gap: 30%;
 	}
 	
 	.map {
@@ -165,7 +152,7 @@ src: url("Inter-Thin.ttf") format("truetype");
 }
 
 html, body {
-	height: 100%;
+	/*height: 100%;*/
 	margin: 0;
 }
 
@@ -183,21 +170,19 @@ html, body {
     width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-/*    margin-bottom: 10vh;*/
-/*	height: 60vh;*/
+    margin-bottom: 10vh;
+	height: 100vh;
 	overflow: hidden;
     color: white;
 }
 
 .bodycopy {
-/*	transition: transform 0.9s cubic-bezier(.50, .08, 0, .99);*/
-    z-index: 1;
+	/*transition: transform 0.9s cubic-bezier(.50, .08, 0, .99);*/
 	text-align: center;
 	position: absolute;
-    text-shadow: 0px 0px 4px #00000060;
-	top: 40%;
+	top: 50%;
 	left: 50%;
-	width: 90%;
+	width: 60%;
 	transform: translate(-50%, -50%);
 	font: 35px/50px InterMed;
 }
@@ -246,82 +231,23 @@ html, body {
 
 /*ABOUT SECTION*/
 
-
-
-
 .intro {
 	width: var(--w);
-    margin-top:10vh;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .intro-grid {
 	display: grid;
-    width: 70vw;
-	grid-template-columns: repeat(3, auto);
-	grid-column-gap: 10%;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 3%;
 	height: 100%;
 }
-
-
 
 .para p {
     margin-top: 0px;
 	font: var(--body);
     font-size: 10pt;
-}
-
-.para p span {
-	font: var(--bodysp);
-}
-
-.para1 p {
-    margin: 1vw;
-  
-    text-align: center;
-	font: var(--body);
-    font-size: 10pt;
-}
-
-.para1 p span {
-	font: var(--bodysp);
-}
-
-.para2 p {
-    margin: 1vw;
-    
-     text-align: center;
-	font: var(--body);
-    font-size: 10pt;
-}
-
-.para2 p span {
-	font: var(--bodysp);
-}
-
-.para3 p {
-    margin: 1vw;
- 
-     text-align: center;
-	font: var(--body);
-    font-size: 10pt;
-}
-
-.para3 p span {
-	font: var(--bodysp);
-}
-
-.para4 p {
-    margin: 1vw;
- 
-     text-align: center;
-	font: var(--body);
-    font-size: 10pt;
-}
-
-.para4 p span {
-	font: var(--bodysp);
 }
 
 .para pp {
@@ -330,17 +256,16 @@ html, body {
     margin-right: 100px;
 }
 
-
-
-.slide-image {
-/*margin-left: 200px;*/
-    float: left;
-	grid-column-start: 2;
-	grid-column-end: 7;
-    
+.para p span {
+	font: var(--bodysp);
 }
 
-
+.slide-image {
+margin-left: 200px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+    float: right;
+}
 
 .image-center {
     margin: 30px;
@@ -356,21 +281,6 @@ html, body {
 .intro .para {
 	grid-column-start: 1;
 	grid-column-end: 2;
-}
-
-.intro .para1 {
-	grid-column-start: 1;
-	grid-column-end: 2;
-}
-
-.intro .para2 {
-	grid-column-start: 3;
-	grid-column-end: 4;
-}
-
-.intro .para3 {
-	grid-column-start: 5;
-	grid-column-end: 6;
 }
 
 .intro .slide-image {
@@ -389,7 +299,27 @@ html, body {
 }
 
 
+/*MAP SECTION*/
 
+.map {
+	width: var(--w);
+	margin: 200px 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.map-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 6%;
+	height: 100%;
+}
+
+.map-embed {
+	width: 100%;
+	grid-column-start: 2;
+	grid-column-end: 4;
+}
 
 
 /*WORKSHOP SECTION*/
@@ -450,37 +380,16 @@ html, body {
 /*PROJECT SECTION*/
 
 .project-section {
-/*	margin: 200px 0;*/
+	margin: 200px 0;
 	width: var(--w);
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
 .project-section h2 {
 	margin-top: 100px;
 	font: var(--bodysp);
-}
-
-
-.tempImg {
-
-    margin-top: 5vh;
-    margin-right: 3vw;
-    margin-left: 3vw;
-
-    position: relative;
-    height: 85vh;
-    width: 90%;
-    overflow-x: scroll;
-}
-
-.collage {
-    align-items: center;
-    position: relative;
-    height: 85vh;
-    width: 90%;
-    overflow:visible;
 }
 
 
@@ -496,12 +405,61 @@ html, body {
 	height: 100%;
 }
 
-.project .slides2 {
-	width: 80vw;
-	height: auto;
-    overflow-x: scroll;
+/*EXHIBTION*/
+.exhibition {
+	margin: 200px 0;
+	width: var(--w);
+	margin-left: auto;
+	margin-right: auto;
+}
+.exhibition-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 3%;
+}
+.exhibition-grid .para {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+.exhibition-grid .yt-video {
+		grid-column-start: 1;
+	grid-column-end: 5;
+}
+.yt-video {
+	height: 500px;
 }
 
+.exhibition p  {
+	font: var(--body);
+}
+.exhibition a {
+	color: black;
+}
+
+.exhibition p span {
+	font: var(--bodysp);
+}
+
+.final-presentation {
+	/*height: 570px;*/
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+
+/*ABOUT SECTION*/
+.about {
+	margin: 150px auto 100px;
+	width: var(--w);
+}
+.about p span {
+	font: var(--bodysp);
+}
+.about-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 3%;
+}
 
 
 text {
@@ -558,46 +516,7 @@ a:hover {
 }
 
 
-
-/*//tooltip!*/
-
-.main-img {
-  height: 592px;
-  width: 927px;
-  position: relative;
-  background: url('https://image.ibb.co/h2yYXQ/J3QYOZO.png') no-repeat center;
-  
-}
-.invisible-area {
-  position: absolute;
-}
-.area-one{
-    height: 26px;
-    width: 138px;
-    top: 193px;
-    left: 24px;
-}
-.area-two {
-    width: 197px;
-    height: 189px;
-    top: 305px;
-    left: 103px;
-}
-.tooltip {
-  display: none;
-  background: white;
-  border-radius: 5px;
-  border: 1px black solid;
-  position: absolute;
-  top: -25px;
-}
-
-.invisible-area:hover .tooltip {
+/*P5.js*/
+canvas {
   display: block;
 }
-
-
-
-
-
-
